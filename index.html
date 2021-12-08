@@ -38,7 +38,36 @@
     </header>
     
     <!-- hero/jumbotron -->
-    <section>
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult</p>
+            <!-- Add form element -->
+            <form>
+                <label class="" for="name">Enter full name:</label>
+                <input class="form-input" type="text" placeholder="Your name" name="name" id="name">
+                <label for="email">Enter email address:</label>
+                <input class="form-input" type="email" placeholder="Your email" name='email' id="email">
+                <label for="phone">Enter a telephone number:</label>
+                <input class="form-input" type="tel" placeholder="Phone number" name='phone' id="phone">
+                <div>
+                    <p>
+                        Have you woked out with a trainer before?
+                        <input type="radio" id="yes" name="trainer-confirm" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="trainer-confirm" value="no">
+                        <label for="no">No</label>
+                    </p>
+                </div>
+                <p>
+                    I acknowledge that I am at least 18 years of age.
+                    <input type="checkbox" id="age-confirm" name="acknowledge" >
+                </p>
+                <button type="submit">
+                    Ger Runnig!
+                </button>
+            </form>
+        </div>
     </section>
 
     <!-- "what we do" section-->
@@ -65,6 +94,10 @@
     <!-- footer -->
     <footer>
         <h2>❤️ Made with love by Run Buddy.</h2>
+        <div>
+            <a href="#">Read Our Privacy Policy</a><br />
+            &copy; 2021 Run Buddy, Inc.
+        </div>
     </footer>
    
 </body>
